@@ -1,0 +1,15 @@
+<div id="root"></div>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script type="text/babel">
+  // const element = React.createElement('div', { className: 'container', children: 'Hello World' })
+  const content = 'Hello World'
+  const myClassName = 'container'
+  const props = {
+    className: 'container',
+    children: 'Hello World'
+  }
+  const element = <div {...props} > Hi There </div> // It gonna overwrite
+  ReactDOM.render(element, document.getElementById('root'))
+</script>
